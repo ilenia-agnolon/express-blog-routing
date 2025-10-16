@@ -27,7 +27,7 @@ router.put("/:id", (req, res) => {
 // • MODIFY -> PATCH /posts/:id
 router.patch("/:id", (req, res) => {
   res.send("Modifica parziale del post" + req.params.id);
-}); //PUT http://localhost:3000/posts/1 → “Modifica integrale del post 1”
+}); //PATCH http://localhost:3000/posts/1 → “Modifica parziale del post 1”
 
 // • DESTROY-> DELETE /posts/:id
 router.delete("/:id", (req, res) => {
