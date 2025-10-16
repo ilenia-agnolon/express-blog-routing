@@ -56,6 +56,10 @@ app.get("/bacheca", (req, res) => {
   res.json(posts);
 });
 
+// IMPORTO E REGISTRO IL ROUTER DEI POST
+const postsRouter = require("./routers/posts");
+app.use("/posts", postsRouter);
+
 // metto in ascolto il server sulla porta definita
 app.listen(port, () => {
   console.log(`✅ Server avviato sulla porta ${port}`);
