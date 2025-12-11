@@ -1,3 +1,5 @@
+//--> in questo file viene inizializzato il server Express e vengono registrati i router
+
 // importo il framework Express
 const express = require("express");
 
